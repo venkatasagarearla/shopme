@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* Styles for the navigation item containing the dropdown */
+/* Styles for the navigation item containing the dropdown */
+.nav-action-item {
+    position: relative; /* Required for positioning the dropdown */
+}
+
+.nav-action-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the nav-action-item */
+    top: 100%; /* Position it below the nav-action-btn */
+    left: 0;
+    background-color: #ffffff; /* Background color for dropdown */
+    border: 1px solid #ddd; /* Border around the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    padding: 10px;
+    z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+/* Dropdown menu items */
+.dropdown-menu li {
+    list-style: none; /* Remove bullets */
+    margin: 0; /* Remove margin */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333; /* Text color */
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Keep the dropdown menu visible when hovering over the button or the menu */
+.nav-action-item:hover .dropdown-menu,
+.nav-action-item .dropdown-menu:hover {
+    display: block; /* Show the dropdown */
+}
+
+/* Optional: Styling for the nav-action-btn */
+.nav-action-btn {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.nav-action-btn:hover {
+    background-color: #e0e0e0;
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar styles */
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item {
+    display: inline;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Action list styles */
+.nav-action-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-action-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-action-btn:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.nav-action-btn ion-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.nav-action-text {
+    font-size: 16px;
+}
+
+.nav-action-badge {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+/* Overlay for mobile menu */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: none;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-link {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .nav-action-list {
+        justify-content: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggle ion-icon {
+        font-size: 30px;
+    }
+
+    /* Show the overlay and menu on mobile toggle */
+    .navbar-list.active {
+        display: block;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+    
+    
+}
+.hero-section {
+  background-image: url("images/hero_image.jpg");
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero-msg {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  width: 80%;
+  height: 25px;
+  margin-bottom: 25px;
+}
+.hero-msg a {
+  color: #007185;
+}
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e2e7e6;
+}
+/*shop section*/
+.box {
+  width: 23%;
+  height: 400px;
+
+  background-color: white;
+  padding: 20px 0px 15px;
+  margin-top: 5px;
+}
+.box-img {
+  height: 320px;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.box-content p {
+  color: #007185;
+}
+footer {
+  margin-top: 15px;
+}
+.foot-panel1 {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.foot-panel2 {
+  background-color: #222f3d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul {
+  margin-top: 10px;
+}
+.divnavFootercoolHead {
+  font-size: 16px;
+}
+ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  color: #dddddd;
+}
+.foot-panel3 {
+  background-color: #222f3d;
+  border-top: 0.5px solid white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  .logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 10%;
+  }
+}
+.foot-panel4 {
+  background-color: #0f1111;
+  color: white;
+  height: 76px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.pages {
+  padding-top: 25px;
+}
+.copyright {
+  font-size: 0.7rem;
+}

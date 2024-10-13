@@ -1,0 +1,65 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GlobalServlet</servlet-name>
+  	<display-name>GlobalServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.shopme.controller.GlobalServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BuyerServlet</servlet-name>
+  	<display-name>BuyerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.shopme.controller.BuyerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.shopme.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RetailerServlet</servlet-name>
+  	<display-name>RetailerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.shopme.controller.RetailerServlet</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>OrderProductServlet</servlet-name>
+  	<display-name>OrderProductServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.shopme.controller.OrderProductServlet</servlet-class>
+  </servlet>
+    <servlet>
+    	<servlet-name>ViewAllRetailersServlet</servlet-name>
+    	<display-name>ViewAllRetailersServlet</display-name>
+    	<description></description>
+    	<servlet-class>com.shopme.controller.ViewAllRetailersServlet</servlet-class>
+    </servlet>
+ 
+   
+    
+  <servlet-mapping>
+  	<servlet-name>GlobalServlet</servlet-name>
+  	<url-pattern>/GlobalServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BuyerServlet</servlet-name>
+  	<url-pattern>/BuyerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RetailerServlet</servlet-name>
+  	<url-pattern>/RetailerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewAllRetailersServlet</servlet-name>
+  	<url-pattern>/ViewAllRetailersServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

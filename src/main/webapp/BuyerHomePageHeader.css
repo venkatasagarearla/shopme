@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.sticky-header {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.sticky-header form {
+    margin: 0 10px;
+}
+
+.sticky-header input[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-header input[type="submit"]:hover {
+    background-color: #0056b3;
+}

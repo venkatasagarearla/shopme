@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+
+<form action="GlobalServlet?taskType=login"  method="post">
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email" required></input>
+        <br>
+        <label for="pass">Enter your password</label>
+        <input type="password" id="pass" name="pass" required></input>
+        <br>
+        <button type="submit">Submit</button>
+        <p class="signup-link">Don't have an account? <a href="signup.jsp">Please register</a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between buttons */
+    width: 100%; /* Ensure container takes full width */
+}
+
+header form {
+    display: inline-block;
+    margin: 0 5px; /* Add some margin between forms */
+}
+
+header input[type="submit"] {
+    background-color: #28a745; /* Green background for buttons */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; /* Ensure text is centered */
+    width: auto; /* Allow width to adjust based on content */
+}
+
+header input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+header input[type="submit"].logout {
+    background-color: #dc3545; /* Red background for logout button */
+}
+
+header input[type="submit"].logout:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+
